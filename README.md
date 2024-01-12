@@ -2,6 +2,35 @@
 ```shell
 node primeNumber.js
 ```
+
+# 総当りで遅いプログラム
+```js
+function calculationPrimeNumber(number) {
+    for(i = 2n; i <= number; i++) {
+        if( number % i == 0) {
+            return [number/i, i]
+        }
+    }
+}
+
+function processMeasure(calculationFunction, questionNumber) {
+    const startTime = performance.now()
+    const arr = calculationFunction(questionNumber)
+    const endTime = performance.now()
+
+    const processTime = Math.floor((endTime - startTime)/1000)
+
+    console.log(arr);
+    console.log(`あなたの処理時間は${processTime}秒でした。`);
+}
+
+const questionPrimeNumber1 = 1192000993n
+const questionPrimeNumber2 = 1192001071n
+const questionSemiPrimeNumber = 1420866460289063503n
+
+processMeasure(calculationPrimeNumber, questionSemiPrimeNumber)
+```
+
 # Try1
 ## 着眼点：３の倍数 計算スキップ
 ```js
