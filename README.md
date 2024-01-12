@@ -31,7 +31,7 @@ const questionSemiPrimeNumber = 1420866460289063503n
 processMeasure(calculationPrimeNumber, questionSemiPrimeNumber)
 ```
 
-# Try1
+# Speed up Try1
 ## 着眼点：３の倍数 計算スキップ
 ```js
 // 16秒
@@ -53,7 +53,7 @@ function calculationPrimeNumberTono(number) {
 ![digtono 2024-01-12 at 17 29 14](https://github.com/mtonosaki/primeNumberSpeedTry/assets/34669114/ffdcda68-c2d8-4e32-9257-10d479b9005a)
 ![digtono 2024-01-12 at 17 29 38](https://github.com/mtonosaki/primeNumberSpeedTry/assets/34669114/8959599c-b38e-41ec-8d9b-7f9f7363c9bb)
 
-# Try2
+# Speed up Try2
 ## 着眼点：11の倍数もスキップ、全スレッド活用
 本当は 7の倍数をスキップしたかった。。。むずい  
 
